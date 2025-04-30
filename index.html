@@ -1,74 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>EV Charging Usage Distribution - Indonesia</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="UTF-8">
+  <title>EV Charging Usage Distribution - Indonesia</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-        header {
-            background: #0072ce;
-            color: white;
-            padding: 1em;
-            text-align: center;
-        }
+    header {
+      background: #0072ce;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
 
-        section {
-            padding: 0;
-            margin: 0;
-        }
+    iframe {
+      width: 100%;
+      height: 90vh;
+      border: none;
+      display: block;
+    }
 
-        iframe {
-            width: 100%;
-            height: 90vh;
-            border: none;
-        }
+    .legend {
+      position: fixed;
+      bottom: 80px;
+      left: 20px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border: 1px solid #ccc;
+      padding: 10px 14px;
+      font-size: 14px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      border-radius: 5px;
+    }
 
-        .legend {
-            position: absolute;
-            bottom: 30px;
-            left: 30px;
-            background-color: white;
-            border: 1px solid #ccc;
-            padding: 10px;
-            font-size: 14px;
-            line-height: 1.5;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-        }
-
-        footer {
-            text-align: center;
-            font-size: 14px;
-            color: #555;
-            background-color: #f2f2f2;
-            padding: 1em;
-        }
-    </style>
+    footer {
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 10px;
+      font-size: 13px;
+      color: #333;
+    }
+  </style>
 </head>
 <body>
 
-<header>
+  <header>
     <h1>EV Charging Usage Map - Indonesia</h1>
     <p>Interactive Map for UC Berkeley Master's Thesis (Rachman Setiawan)</p>
-</header>
+  </header>
 
-<section>
-    <iframe src="map_spklu.html"></iframe>
-    <div class="legend">
-        <strong>Legend</strong><br>
-        ● Circle size = Avg. Transactions per Day<br>
-        ● Larger = More frequently used<br>
-        ● Smaller = Less frequently used
-    </div>
-</section>
+  <div class="legend">
+    <strong>Legend</strong><br>
+    ● Circle size = Average Transactions per Day<br>
+    ● Larger = More frequently used<br>
+    ● Smaller = Less frequently used
+  </div>
 
-<footer>
-    Created by Rachman Setiawan | Data source: PLN Indonesia (2020–2024)
-</footer>
+  <iframe src="map_spklu.html"></iframe>
+
+  <footer>
+    Created by Rachman Setiawan | Data from PLN Indonesia (2020–2024)
+  </footer>
 
 </body>
 </html>

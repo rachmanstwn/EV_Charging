@@ -11,11 +11,27 @@
     }
 
     header {
-      background: #0072ce;
+      background: #003262; /* UC Berkeley Cal Blue */
       color: white;
       padding: 1em;
       text-align: center;
       line-height: 1.6;
+    }
+
+    .header-logos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-bottom: 1em;
+    }
+
+    .header-logos img {
+      height: 50px;
+      background: white;
+      border-radius: 4px;
+      padding: 4px;
     }
 
     iframe {
@@ -46,7 +62,7 @@
       margin-right: 6px;
     }
 
-    .blue { background-color: blue; }
+    .blue { background-color: #003262; } /* UC Berkeley Blue */
     .red { background-color: red; }
 
     footer {
@@ -62,6 +78,11 @@
 <body>
 
   <header>
+    <div class="header-logos">
+      <img src="https://upload.wikimedia.org/wikipedia/en/e/ef/Logo_PLN.svg" alt="PLN Logo">
+      <img src="https://brand.berkeley.edu/wp-content/uploads/2016/11/ucbseal_139_540-1.png" alt="UC Berkeley Logo">
+      <img src="https://www.lpdp.kemenkeu.go.id/files/images/logo-lpdp.png" alt="LPDP Logo">
+    </div>
     <h1>EV Charging Usage Map - Indonesia</h1>
     <p>Interactive Map for UC Berkeley Master's Thesis (Rachman Setiawan)</p>
     <p><em>Data source: PLN Indonesia (2020 – October 2024)</em></p>

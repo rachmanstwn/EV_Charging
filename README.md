@@ -6,7 +6,7 @@ This is an **interactive map** visualizing the distribution and usage of EV Char
 - **Purpose**: UC Berkeley Master’s Thesis - Energy and Resources Group (ERG)
 - **Technology**: Folium (Python), GitHub Pages
 
-[Click here to view the live map](github.com/rachmanstwn/EV_Charging)
+[Click here to view the live map](https://rachmanstwn.github.io/EV_Charging/index.html)
 
 ---
 Made with by Rachman Setiawan
